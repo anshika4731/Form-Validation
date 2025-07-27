@@ -1,6 +1,7 @@
 This project validates form fields like username, email, mobile number, password, confirm password, checks if user inputs in a form are correct before submitting. It helps prevent errors and makes sure the data entered is valid. 
 
 ✅ What It Validates:
+
 Username - must not be empty and follow character rules
 
 Email - must be in a proper email format (e.g., example@mail.com)
