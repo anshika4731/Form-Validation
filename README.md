@@ -20,7 +20,7 @@ Client-Side Validation Only: All validation is done on the client side using Jav
 
     •  HTML5 attributes like required, type="email", and pattern are used for basic validation.
 
-✅ Technologies Used:
+💻 Technologies Used:
 
 HTML5 – To structure the form and use built-in validation attributes.
 
