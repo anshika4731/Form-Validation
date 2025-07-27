@@ -11,3 +11,11 @@ Mobile Number - must be valid and contain only digits
 Password - must be strong (e.g., mix of letters, numbers, symbols)
 
 Confirm Password - must match the password
+
+✅ Validation Type Used:
+
+Client-Side Validation Only: All validation is done on the client side using JavaScript.
+
+    •  HTML5 attributes like required, type="email", and pattern are used for basic validation.
+
+
