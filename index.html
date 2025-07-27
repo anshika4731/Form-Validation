@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h2>Hello! <br> Register to Get Started</h2>
+    </div>
+
+    <form class="form" id="form">
+        <table>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td>
+                    <input type="text" name="username" id="username" placeholder="Enter your name" required>
+                    <small id="usernameError" class="error"></small>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                    <small id="emailError" class="error"></small>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="phone">Mobile Number:</label></td>
+                <td>
+                    <input type="tel" name="phone" id="phone" placeholder="e.g., +91" pattern="^\+?\d{10,15}$" required>
+                    <small id="phoneError" class="error"></small>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                    <small id="passwordError" class="error"></small>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="cpassword">Confirm Password:</label></td>
+                <td>
+                    <input type="password" name="cpassword" id="cpassword" placeholder="Enter your password again" required>
+                    <small id="cpasswordError" class="error"></small>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Register" class="btn">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

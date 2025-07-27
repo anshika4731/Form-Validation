@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --myfont: 'Roboto', sans-serif;
+    --lg-lightcolorbackground: linear-gradient(to left, rgba(116, 235, 213, 0.665), rgba(159, 172, 230, 0));
+    --lg-color: linear-gradient(to left, #74ebd5, #9face6);
+    --primary-color: #74ebd5;
+    --secondary-color: #9face6;
+}
+
+/* Body styling */
+body {
+    font-family: var(--myfont);
+    background: var(--lg-lightcolorbackground);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+/* Header styling */
+.header {
+    padding: 50px 0px;
+    border-radius: 12px;
+    margin-bottom: 0px;
+    color: #000;
+    text-align: center;
+}
+
+.header h2 {
+    background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #ff6ec4);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 8s ease infinite;
+    font-size: 24px;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin: 5px 0 10px 0;
+    display: block;
+}
+
+/* Form styling */
+form.form {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Table styles */
+form table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+form td {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+form label {
+    font-weight: 500;
+    display: inline-block;
+    width: 150px;
+}
+
+/* Input styles */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"] {
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(116, 235, 213, 0.5);
+}
+
+/* Submit Button */
+form .btn {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #ff6ec4);
+    background-size: 600% 600%;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    animation: gradientShift 8s ease infinite;
+}
+
+form .btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
